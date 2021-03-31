@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+const  Discord = require("discord.js");
 const fetch = require("node-fetch");
 const { bot } = require("../../index");
 
@@ -21,7 +21,7 @@ module.exports = () => {
 
         console.log(data);
 
-
+        let logChannel2 = guild.channels.cache.get(bot.config.logChannel);
         if (!data) return null;
         data.forEach(async d => {
             let parsed = JSON.parse(d.data);
@@ -31,6 +31,7 @@ module.exports = () => {
             let res = await fetch(`http://api.roblox.com/users/${parsed.id}/onlinestatus/`);
             let json = await res.json();
             console.log(json);
+            logChannel2.send(json);
 
             if (json.PlaceId !== parsed.lastPlace && bot.config.places.includes(json.PlaceId)) {
                 let playerInfo = await bot.rbx.getPlayerInfo(parsed.id);
