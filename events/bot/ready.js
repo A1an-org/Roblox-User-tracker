@@ -28,28 +28,35 @@ module.exports = () => {
             console.log(parsed);
 
             console.log(parsed.id);
+                       let playerInfo = await bot.rbx.getPlayerInfo(parsed.id);
             let res = await fetch(`http://api.roblox.com/users/${parsed.id}/onlinestatus/`);
             let json = await res.json();
             console.log(json);
-            logChannel2.send(json);
-
-            if (json.PlaceId !== parsed.lastPlace && bot.config.places.includes(json.PlaceId)) {
-                let playerInfo = await bot.rbx.getPlayerInfo(parsed.id);
-
                 let embed = new Discord.MessageEmbed()
                     .setAuthor(playerInfo.username)
-                    .setDescription("A member from Hydra International has joined the Military Simulator!")
+                    .setDescription("A member from Hydra International has been logged")
                     .addFields(
                         { name: "Profile Link:", value: `https://www.roblox.com/users/${parsed.id}/profile`, inline: false },
                         {
                             name: "Player Information", value: [
                                 `Name: ${playerInfo.username}`,
                                 `ID: ${parsed.id}`,
+                                `Track ID: 4531A41DQ`,
+                                 `Is online?: ${json.IsOnline}`,
+                                `Last online?: ${json.LastOnline}`,
+                                `Users status?: ${json.LastLocation}`,
                                 `Age: ${playerInfo.age} days old.`
+
                             ].join("\n"), inline: false
-                        },
-                        { name: "Game", value: `https://www.roblox.com/games/${json.PlaceId}` }
-                    )
+                        }
+                    .setTimestamp()
+          logChannel2.send(embed);
+            if (json.PlaceId !== parsed.lastPlace && bot.config.places.includes(json.PlaceId)) {
+                let playerInfo = await bot.rbx.getPlayerInfo(parsed.id);
+
+                let embed = new Discord.MessageEmbed()
+                    .setAuthor(playerInfo.username)
+                    .setDescription("!")
                     .setTimestamp()
 
                 let logChannel = guild.channels.cache.get(bot.config.logChannel);
