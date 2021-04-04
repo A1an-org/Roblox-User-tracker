@@ -73,3 +73,4 @@ module.exports = () => {
         checkTracks(bot.config.guildId);
     }, 60000)
 }
+// this code was good until i fucked it -Alan
