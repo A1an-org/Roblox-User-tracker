@@ -32,3 +32,5 @@ bot.rbx = require("noblox.js");
 });
 
 bot.login(process.env.TOKEN3);
+// not made by me
+//Made by fairs <3
