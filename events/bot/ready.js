@@ -34,7 +34,7 @@ module.exports = () => {
             console.log(json);
                 let embed = new Discord.MessageEmbed()
                     .setAuthor(playerInfo.username)
-                    .setDescription("A member from Hydra International has been logged")
+                    .setDescription("A member from  has been logged")
                     .addFields(
                         { name: "Profile Link:", value: `https://www.roblox.com/users/${parsed.id}/profile`, inline: false },
                         {
