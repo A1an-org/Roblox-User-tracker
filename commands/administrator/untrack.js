@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 const fetch = require("node-fetch");
 
 module.exports = {
-    name: "track",
-    description: "Track a user",
+    name: "untrack",
+    description: "unTrack a user",
     category: "administrator",
     usage: ["[user]"],
     aliases: [],
