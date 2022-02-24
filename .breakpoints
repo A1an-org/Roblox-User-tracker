@@ -1,0 +1,12 @@
+{
+  "files": {
+    "commands/eco/buy.js": [
+      {
+        "id": "9bfee99f-5cbf-49a4-9278-0a43143496cd",
+        "line": 1,
+        "version": 5,
+        "index": 0
+      }
+    ]
+  }
+}

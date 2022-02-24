@@ -1,0 +1,116 @@
+{
+  "MS1": {
+    "Jet Pack": {
+      "id": 7167194,
+      "power": 2
+    },
+    "Ak-4k Hog Blaster": {
+      "id": 6618983,
+      "power": 4
+    },
+    "Ghost": {
+      "id": 7278529,
+      "power": 2.5
+    },
+    "Grouch": {
+      "id": 7737821,
+      "power": 4
+    },
+    "Raider Bundle": {
+      "id": 7049306,
+      "power": 2
+    },
+    "Premier's Chosen": {
+      "id": 6331020,
+      "power": 0.5
+    },
+    "Grenade Bundle": {
+      "id": 7049309,
+      "power": 1
+    },
+    "Mafia Boss": {
+      "id": 7458944,
+      "power": 5
+    },
+    "Snow man": {
+      "id": 7737822,
+      "power": 1.5
+    },
+    "Bunny": {
+      "id": 8921262,
+      "power": 4
+    },
+    "Grim Reaper": {
+      "id": 12497219,
+      "power": 1
+    },
+    "Santa": {
+      "id": 13341785,
+      "power": 1.5
+    },
+    "Icy shotgun": {
+      "id": 7737114,
+      "power": 0.5
+    },
+    "Skeleton": {
+      "id": 7278530,
+      "power": 1
+    },
+    "AWP": {
+      "id": 7520141,
+      "power": 1
+    },
+    "Alien ( Rare Morph )": {
+      "id": 6832826,
+      "power": 5
+    },
+    "PPSH41": {
+      "id": 6093909,
+      "power": 1
+    },
+    "Mecha": {
+      "id": 7207309,
+      "power": 1.5
+    },
+    "RPG": {
+      "id": 7525193,
+      "power": 1.5
+    },
+    "Hitman": {
+      "id": 6093835,
+      "power": 0.25
+    },
+    "Juggernaut V1": {
+      "id": 6093890,
+      "power": 1.5
+    },
+    "Grenade Laucher": {
+      "id": 7567995,
+      "power": 1.5
+    },
+    "Starter Pack": {
+      "id": 7047576,
+      "power": 1.5
+    },
+    "CARD IV": {
+      "id": 6651418,
+      "power": 0.5
+    },
+    "Explosive Expert": {
+      "id": 6667987,
+      "power": 1
+    },
+    "Border director": {
+      "id": 7207328,
+      "power": 1.5
+    },
+    "Demon": {
+      "id": 22431458,
+      "power": 645.85
+    },
+    "Enegry Sword (Rare item)": {
+      "id": 6819211,
+      "power": 2.9
+    }
+  }
+}
